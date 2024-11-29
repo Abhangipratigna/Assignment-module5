@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Ans14. Explain the difference between include and require in PHP.</h2>
+
+    <h4> include() </h4>
+    <li>The include() function does not stop the execution of the script even if any error occurs.</li>
+    <li>The include() function does not give a fatal error.</li>
+    <li>The include() function is mostly used when the file is not required and the application
+        should continue to execute its process when the file is not found.</li>
+    <li>The include() function will only produce a warning (E_WARNING) and the script will continue to execute.</li>
+    <li>The include() function generate various functions and elements that are reused across many pages taking a longer
+        time for the process completion.
+    </li>
+
+    <h4>require() </h4>
+    <li>The require() function will stop the execution of the script when an error occurs.</li>
+    <li>The require() function gives a fatal error </li>
+    <li>The require() function is mostly used when the file is mandatory for the application.</li>
+    <li>The require() will produce a fatal error (E_COMPILE_ERROR) along with the warning and the script will stop its
+        execution. </li>
+    <li>The require() function is more in recommendation and considered better whenever we need to stop the execution
+        incase of availability of file, <br>
+        it also saves time avoiding unnecessary inclusions and generations.</li>
+
+</body>
+
+</html>
